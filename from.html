@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>PHOTOGRAPHY SURVEY FROM</title>
+</head>
+<body style="background-color:#22909e;">
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<br> </br>
+<header></header>
+<form action="mailto:rakeshparida316@gmail.com" method="post" enctype="text/plain" >
+<!-- If we remove this, every thing will move to the left of the page-->
+<br></br><div align="center">
+<!--Adds a heading to the form-->
+<h1>PHOTOGRAPHY SURVEY FROM </h1>
+Enter your full name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" placeholder="full name" size=30 maxlength=30 required>
+<br><br>
+Enter your Email Id:
+<!-- Input type text for small texts, specify size -->
+<input type="email" name="UserName id " placeholder="Email.Id" size=30 maxlength=30 required>
+<!--Adds spaces - remove and see what happens -->
+</br></br> 
+GENDER:
+<input type="radio" name="user" value=male >male
+<input type="radio" name="user" value=femail >female
+<br></br>
+<label for="Type of photograpgy">type of photograpgy:</label>
+
+<select name=" photography type " id="type">
+  <option value=defult">slect the type</option>
+  <option value="landscape photograpgy">landscape photograpgy</option>
+  <option value="portrait photograpgy">portrait photograpgy </option>
+  <option value="night photograpgy">night photograpgy</option>
+  <option value="street photograpgy">street photograpgy</option>
+</select> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4 placeholder="yourself"></textarea> </br> </br>
+Do you have cameria ?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="camera" value=yes>Yes
+<input type="radio" name="camera" value=no>No
+<br></br>
+</p>
+which photo editor software you us?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="photoshop ">photoshop 
+<input type="checkbox" name="lightroom">lightroom
+<input type="checkbox" name="pic art">pic art
+<input type="checkbox" name="other app">other app 
+</p>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit id="submit" value="Submit">
+<input type="reset" name="resetform" id="resetform" value="resetform"  />
+<!--this is home button as img format -->
+<a href="index.html">,<span align="center"><img src="data:image/png;base64,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" height="25px" width="25px"  alt=""></a>
+</span>
+</div>
+</form>
+</body>
+</html>
